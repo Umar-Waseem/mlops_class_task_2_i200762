@@ -18,7 +18,7 @@ pipeline {
         stage('Testing') {
             steps {
                 echo 'Running Tests'
-                sh "python -m pytest test.py"
+                sh "python venv pytest test.py"
             }
         }
         stage('Branch Name Check') {
