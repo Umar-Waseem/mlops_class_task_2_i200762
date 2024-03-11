@@ -25,7 +25,7 @@ pipeline {
             steps {
                 echo 'Checking branch name'
                 script {
-                    def branchName = env.BRANCH_NAME
+                    def branchName = "${env.GIT_BRANCH}"
                     if (branchName == 'main') {
                         echo "Branch Name: ${branchName}"
                     }
