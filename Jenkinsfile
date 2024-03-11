@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo "Cloning Repo"
                 sh "ls"
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Umar-Waseem/learn-jenkins.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Umar-Waseem/mlops_class_task_2_i200762.git']])
             }
         }
         stage('Install Dependencies') {
