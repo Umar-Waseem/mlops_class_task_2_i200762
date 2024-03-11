@@ -5,6 +5,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 echo "Cloning Repo"
+                sh "ls"
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Umar-Waseem/learn-jenkins.git']])
             }
         }
